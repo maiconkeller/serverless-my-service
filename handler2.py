@@ -1,9 +1,9 @@
 import json
 
 
-def hello(event, context):
+def hello2(event, context):
     body = {
-        "message": "Hello Maicon!",
+        "message": "Hello Maicon Keller!",
         "input": event
     }
 
@@ -18,15 +18,7 @@ def hello(event, context):
     # integration
     """
     return {
-        "message": "Hello Maicon!",
+        "message": "Hello Maicon Keller!",
         "event": event
     }
     """
-def test(event, context):
-    return {
-        "statusCode": 200,
-        "body": json.dumps({
-            "message": "Testing this code...",
-            "input": event
-        })
-    }
